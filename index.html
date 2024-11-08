@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Police Academy Digital Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            padding: 2rem;
+        }
+        .search-bar {
+            border: 1px solid #ffffff;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+        }
+        .search-bar input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            flex-grow: 1;
+        }
+        .search-bar button {
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            margin-left: 0.5rem;
+        }
+        .search-bar button i {
+            color: #ffffff;
+        }
+        .search-bar select {
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            margin-right: 0.5rem;
+        }
+        .search-bar select option {
+            background: #000000;
+        }
+        .tab {
+            border: 1px solid #ffffff;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+        .tab.active {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .suggestion {
+            border: 1px solid #ffffff;
+            border-radius: 9999px;
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            display: inline-block;
+            font-size: 1rem;
+        }
+        .icon-button {
+            border: 1px solid #ffffff;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            text-align: center;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem;
+        }
+        .divider {
+            border-left: 1px solid #006400;
+            height: 24px;
+            margin: 0 0.5rem;
+        }
+        .underline-green {
+            border-bottom: 2px solid #006400;
+            display: inline-block;
+        }
+        .search-button {
+            color: #006400;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-4xl font-bold mb-8"><span class="underline-green">Dubai</span> Police Academy Digital Library</h1>
+    <div class="flex mb-8">
+        <div class="tab active">Keyword Search</div>
+        <div class="tab">AI Assistant</div>
+    </div>
+    <div class="search-bar mb-8">
+        <select>
+            <option>in Full Text</option>
+        </select>
+        <input type="text" placeholder="What are you looking for?">
+        <button><i class="fas fa-microphone"></i></button>
+        <div class="divider"></div>
+        <button class="search-button">Search</button>
+    </div>
+    <div class="flex flex-wrap justify-center mb-8">
+        <div class="suggestion">How does the structure of a protein affect its function?</div>
+        <div class="suggestion">What are major unanswered questions about empathy?</div>
+        <div class="suggestion">Summarize research in the last 5 years about linguistics</div>
+    </div>
+    <div class="flex justify-end w-full max-w-800px mb-8 pr-4">
+        <button class="tab">Advanced Search</button>
+    </div>
+    <div class="flex flex-wrap justify-center space-x-4 mb-4">
+        <div class="icon-button">
+            <i class="fas fa-file-alt text-2xl mb-2"></i>
+            <div>Articles</div>
+        </div>
+        <div class="icon-button">
+            <i class="fas fa-book text-2xl mb-2"></i>
+            <div>Books</div>
+        </div>
+        <div class="icon-button">
+            <i class="fas fa-video text-2xl mb-2"></i>
+            <div>Videos</div>
+        </div>
+        <div class="icon-button">
+            <i class="fas fa-chart-bar text-2xl mb-2"></i>
+            <div>Infographs</div>
+        </div>
+        <div class="icon-button">
+            <i class="fas fa-file-alt text-2xl mb-2"></i>
+            <div>Reports</div>
+        </div>
+    </div>
+</body>
+</html>
